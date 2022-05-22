@@ -1,0 +1,17 @@
+{%extends 'base.html'%}
+{% block body %}
+        <h1>大熊课堂</h1>
+        <p>欢迎来到大熊课堂python课程,我是{{ info['name'] }}</p>
+        <ul>
+            <li>
+                {{ number[0] }}
+            </li>
+            <li>
+                {{ number[1] }}
+            </li>
+        </ul>
+        <p>
+            {{user.name}}
+            {{user.get_info()}}
+        </p>
+{% endblock %}
